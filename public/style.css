@@ -22,6 +22,42 @@ body {
       background-position: 0% 50%;
     }
   }
+
+
+.outer-container {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.side-image-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.side-image {
+    max-width: 100%; /* Ajusta el ancho máximo de las imágenes laterales al 100% del contenedor */
+    height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+    margin-top: -480px;
+}
+
+.carousel-container {
+    flex: 3; /* Puedes ajustar este valor según sea necesario */
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+}
+
+
+
   .navbar {
     overflow: hidden;
     background-color: #333;

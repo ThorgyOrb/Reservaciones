@@ -86,17 +86,6 @@
             <label for="nombre">Nombre:</label>
             <input type="text" name="nombre" class="form-control" required placeholder="Nombre">
         </div>
-<!--
-        <div class="form-group">
-            <label for="fecha_inicio">Fecha de inicio:</label>
-            <input type="datetime-local" name="fecha_inicio" class="form-control" required>
-        </div>   
-          
-        <div class="form-group">
-            <label for="fecha_fin">Fecha de fin:</label>
-            <input type="datetime-local" name="fecha_fin" class="form-control" required>
-        </div>
--->
       
         <label for="Fecha">Fecha:</label>
         <div id="datepicker" style="margin-right: 40px"></div>

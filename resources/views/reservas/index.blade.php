@@ -36,7 +36,6 @@
                     <th>Telefono</th>
                     <th>Correo</th>
                     <th>Servicio</th>
-                    <th>Prueba</th>
                     <!-- Agregar más columnas según sea necesario -->
                 </tr>
             </thead>
@@ -50,9 +49,6 @@
                         <td>{{ $reserva->telefono }}</td>
                         <td>{{ $reserva->email }}</td>
                         <td>{{ $reserva->servicio }}</td>
-                        @if($reserva->servicio == 'Corte de cabello')
-                <td>{{ $reserva->servicio }}</td>
-            @endif
                         <!-- Agregar más columnas según sea necesario -->
                     </tr>
                 @endforeach

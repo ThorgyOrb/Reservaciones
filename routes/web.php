@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ReservaController;
 use App\Http\Controllers\CalendarioController;
 use App\Http\Controllers\SocialController;
+use App\Http\Controllers\BlogController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,7 +26,7 @@ Route::get('/reservas', [ReservaController::class, 'index']);
 Route::get('/reservas/create', [ReservaController::class, 'create'])->name('crear');
 Route::post('/reservas', [ReservaController::class, 'store']);
 
-
+Route::get('blogs', [BlogController::class, 'index'])->name('blogs.index');
 
 
 //Route::get('auth/facebook', [SocialController::class, 'facebookRedirect']);
